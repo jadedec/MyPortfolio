@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  margin: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+ul li a :hover {
+  background-color: #ddd;
+}/*# sourceMappingURL=style.css.map */

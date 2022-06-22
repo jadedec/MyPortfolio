@@ -1,1 +1,35 @@
 @use "./variable" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: $background_color;
+}
+
+body{
+    margin:1rem;
+    color:$text_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    // Removes the bullets
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    li{
+        float:left;
+        a{
+            display: block;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            :hover{
+                background-color: $hover_color;
+            }
+        }
+    }
+}
