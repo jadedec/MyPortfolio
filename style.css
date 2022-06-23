@@ -1,16 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgba(19, 19, 19, 0.913);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  margin: 1rem;
+  padding: 20px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 
 .container h1 {
@@ -34,7 +40,24 @@ body {
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
+  color: white;
 }
 .container nav li a :hover {
   background-color: #ddd;
+}
+
+.intro .intro_heading {
+  font-family: "Cormorant Upright", serif;
+  font-size: 5rem;
+}
+.intro .intro_detail {
+  font-family: "Inter", sans-serif;
+}
+
+.card h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 2rem;
+}
+.card .card_img {
+  width: 370px;
 }/*# sourceMappingURL=style.css.map */
