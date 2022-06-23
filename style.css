@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -12,21 +13,28 @@ body {
   justify-content: center;
 }
 
-ul {
+.container h1 {
+  font-family: "Cormorant Upright", serif;
+}
+.container h1 span {
+  font-family: "Cormorant Upright", serif;
+  color: #D9BEA5;
+}
+.container nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-ul li {
+.container nav li {
   float: left;
 }
-ul li a {
+.container nav li a {
   display: block;
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
 }
-ul li a :hover {
+.container nav li a :hover {
   background-color: #ddd;
 }/*# sourceMappingURL=style.css.map */

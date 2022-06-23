@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: $background_color;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -14,7 +15,15 @@ body{
     justify-content: center;
 }
 
-ul{
+.container {
+    h1{
+        font-family: $highlight_font;
+        span{
+            font-family: $highlight_font;
+            color:$line_color;
+        }
+    }
+    nav{
     // Removes the bullets
     list-style-type: none;
     margin:0;
@@ -31,5 +40,6 @@ ul{
                 background-color: $hover_color;
             }
         }
+    }
     }
 }
