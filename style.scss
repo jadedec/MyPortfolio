@@ -162,15 +162,22 @@ footer{
     background-color:white;
     text-align:center;
     .footerButton{
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         .footerButton_icon{
             padding: 10px 10px;
-            background-color:#453F3F;
+            background-color:$button_color;
             border-radius: 100%;
             overflow: hidden;
-            color: $border_color;
+            img{
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                background-color: $button_color;
+            }
         }
     }
 }

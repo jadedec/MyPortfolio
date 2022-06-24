@@ -151,14 +151,22 @@ footer {
   text-align: center;
 }
 footer .footerButton {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 footer .footerButton .footerButton_icon {
   padding: 10px 10px;
-  background-color: #453F3F;
+  background-color: #3C3636;
   border-radius: 100%;
   overflow: hidden;
-  color: #D9BEA5;
+}
+footer .footerButton .footerButton_icon img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #3C3636;
 }/*# sourceMappingURL=style.css.map */
