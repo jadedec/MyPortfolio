@@ -1,1 +1,74 @@
 @use "./variable" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: $background_color;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding:20px 20px;
+    color:$text_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin:20px 20px;
+    align-items: center;
+}
+.container {
+    h1{
+        font-family: $highlight_font;
+        span{
+            font-family: $highlight_font;
+            color:$line_color;
+        }
+    }
+    nav{
+    // Removes the bullets
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    li{
+        float:left;
+        a{
+            display: block;
+            padding: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: $text_color;
+            :hover{
+                background-color: $hover_color;
+            }
+        }
+    }
+    }
+}
+
+.intro{
+    .intro_heading{
+        font-family: $highlight_font;
+        font-size: 5rem;
+    }
+    .intro_detail{
+        font-family: $para_font;
+    }
+}
+
+.card{
+
+    h2{
+        font-family: $highlight_font;
+        font-size: 2rem;
+    }
+    .card_img{
+        width:300px;
+        
+    }
+}

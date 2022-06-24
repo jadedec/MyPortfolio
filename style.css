@@ -1,1 +1,64 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(19, 19, 19, 0.913);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 20px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  align-items: center;
+}
+
+.container h1 {
+  font-family: "Cormorant Upright", serif;
+}
+.container h1 span {
+  font-family: "Cormorant Upright", serif;
+  color: #D9BEA5;
+}
+.container nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container nav li {
+  float: left;
+}
+.container nav li a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.container nav li a :hover {
+  background-color: #ddd;
+}
+
+.intro .intro_heading {
+  font-family: "Cormorant Upright", serif;
+  font-size: 5rem;
+}
+.intro .intro_detail {
+  font-family: "Inter", sans-serif;
+}
+
+.card h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 2rem;
+}
+.card .card_img {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */
