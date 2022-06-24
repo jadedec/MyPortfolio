@@ -14,18 +14,31 @@ body{
     justify-content: center;
 }
 
-main{
-    padding:20px 20px;
-    display: flex;
-    flex-direction: column;
-    margin:20px 20px;
-    align-items: center;
-}
 header{
     top:0;
-    left:0;
+    left:20px;
+    width: 100%;
     position: absolute;
     .container {
+        .hamburger-lines {
+            display: block;
+            height: 26px;
+            width: 32px;
+            position: absolute;
+            top: 10px;
+            right:40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .line{
+                display: block;
+                height: 4px;
+                width: 100%;
+                border-radius: 10px;
+                background: white;
+            }
+        }
+
         h1{
             font-family: $highlight_font;
             span{
@@ -54,6 +67,14 @@ header{
         }
         }
     }
+}
+
+main{
+    padding:20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin:20px 20px;
+    align-items: center;
 }
 
 .intro{
@@ -134,7 +155,6 @@ margin-top: 20px;
 }
 
 footer{
-
     left: 0;
     bottom: 0;
     width: 100%;
