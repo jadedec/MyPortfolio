@@ -1,0 +1,56 @@
+@use "./variable" as *;
+
+header{
+    top:0;
+    left:20px;
+    width: 100%;
+    position: absolute;
+    .container {
+        h1{
+            font-family: $highlight_font;
+            span{
+                font-family: $highlight_font;
+                color:$line_color;
+            }
+        }
+        .hamburger-lines {
+            display: block;
+            height: 26px;
+            width: 32px;
+            position: absolute;
+            top: 10px;
+            right:40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .line{
+                display: block;
+                height: 4px;
+                width: 100%;
+                border-radius: 10px;
+                background: white;
+            }
+        }
+
+        nav{
+        // Removes the bullets
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        li{
+            float:left;
+            a{
+                display: block;
+                padding: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: $text_color;
+                :hover{
+                    background-color: $hover_color;
+                }
+            }
+        }
+        }
+    }
+}

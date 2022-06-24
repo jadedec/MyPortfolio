@@ -1,0 +1,24 @@
+@use "./variable" as *;
+
+.intro{
+    padding:20px 20px;
+    .intro_heading{
+        align-content: center;
+        margin: 10px 10px;
+        font-family: $highlight_font;
+        font-size: 5rem;
+    }
+    .intro_detail{
+        margin: 10px 10px;
+        font-family: $para_font;
+    }
+}
+
+.touchButton{
+    padding: 20px 40px;
+    border:2px solid $border_color;
+    color: $text_color;
+    background-color: $button_color;
+    text-align: center;
+    text-decoration: none;
+}
