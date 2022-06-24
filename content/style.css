@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(19, 19, 19, 0.913);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  align-items: center;
+}
+
+header {
+  top: 0;
+  left: 20px;
+  width: 100%;
+  position: absolute;
+}
+header .container h1 {
+  font-family: "Cormorant Upright", serif;
+}
+header .container h1 span {
+  font-family: "Cormorant Upright", serif;
+  color: #D9BEA5;
+}
+header .container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+header .container nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header .container nav li {
+  float: left;
+}
+header .container nav li a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+header .container nav li a :hover {
+  background-color: #ddd;
+}
+
+.intro {
+  padding: 20px 20px;
+}
+.intro .intro_heading {
+  align-content: center;
+  margin: 10px 10px;
+  font-family: "Cormorant Upright", serif;
+  font-size: 5rem;
+}
+.intro .intro_detail {
+  margin: 10px 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.touchButton {
+  padding: 20px 40px;
+  border: 2px solid #D9BEA5;
+  color: white;
+  background-color: #3C3636;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card {
+  margin-top: 20px;
+}
+.card h2 {
+  font-family: "Cormorant Upright", serif;
+  font-size: 2rem;
+  margin: 10px 10px;
+}
+.card .card_img {
+  margin: 10px 10px;
+  width: 300px;
+}
+.card .card_heading {
+  font-size: 1.8rem;
+  font-family: "Cormorant Upright", serif;
+  margin: 10px 10px;
+}
+.card .card_detail {
+  margin: 10px 10px;
+  font-family: "Inter", sans-serif;
+}
+.card .buttonGroup .buttonGroup_button {
+  color: white;
+  background-color: #3C3636;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.625rem;
+}
+.card .buttonGroup .buttonGroup_button--box {
+  padding: 10px 10px;
+  border-radius: 100%;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+}
+.list .list_heading {
+  font-size: 1.5rem;
+  font-family: "Cormorant Upright", serif;
+  margin: 10px 10px;
+}
+.list .list_item {
+  margin-bottom: 5px;
+}
+.list .list_item:hover {
+  background-color: #ddd;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+footer .footerButton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .footerButton .footerButton_icon {
+  padding: 10px 10px;
+  background-color: #3C3636;
+  border-radius: 100%;
+  overflow: hidden;
+}
+footer .footerButton .footerButton_icon img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #3C3636;
+}/*# sourceMappingURL=style.css.map */
