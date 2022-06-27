@@ -1,26 +1,91 @@
 @use "./variable" as *;
 
 .intro{
-    padding:20px 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     .intro_heading{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 10px 10px;
         font-family: $highlight_font;
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .intro_detail{
+        width: 50vw;
         margin: 10px 10px;
         font-family: $para_font;
+        font-size: 1rem;
     }
 }
 
+.contact{
+    margin: 0 auto;
+    .contact_heading{
+        font-family: $highlight_font;
+        font-size: 3.5rem;
+    }
+}
 .touchButton{
-    padding: 20px 40px;
-    border:2px solid $border_color;
-    color: $text_color;
-    background-color: $button_color;
-    text-align: center;
-    text-decoration: none;
+    margin: 0 auto;
+    .touchButton_button{
+        width: 10rem;
+        height: 3rem;
+        border:2px solid $border_color;
+        color: $text_color;
+        background-color: $button_color;
+    }
+}
+
+#titleLine{
+    display: block;
+    height: 6px;
+    width: 5.8rem;
+    border-radius: 10px;
+    background: $line_color;
+}
+
+#subtitleLine{
+    display: block;
+    height: 2px;
+    width: 2.8rem;
+    border-radius: 10px;
+    background: $line_color;
+}
+@media screen and (min-width: 768px) {
+    .intro{
+        .intro_heading{
+            font-size: 4.5rem;
+        }
+        .intro_detail{
+            font-size: 1.25rem;
+        }
+    }
+    
+    .contact{
+        margin: 0 auto;
+        .contact_heading{
+            font-size: 4rem;
+        }
+    }
+    .touchButton{
+        margin: 0 auto;
+        .touchButton_button{
+            width: 15rem;
+            height: 5rem;
+        }
+    }
+    
+    #titleLine{
+        width: 6rem;
+        border-radius: 10px;
+        background: $line_color;
+    }
+    
+    #subtitleLine{
+        width: 3rem;
+    }
 }

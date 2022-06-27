@@ -16,6 +16,7 @@ footer{
         .footerButton_icon{
             padding: 10px 10px;
             background-color:$button_color;
+            border: none;
             border-radius: 100%;
             overflow: hidden;
             img{
@@ -23,6 +24,22 @@ footer{
                 height: 20px;
                 object-fit: contain;
                 background-color: $button_color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer{
+        .footerButton{
+            padding-top: 13px;
+            padding-bottom: 13px;
+            .footerButton_icon{
+                padding: 20px 20px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
             }
         }
     }

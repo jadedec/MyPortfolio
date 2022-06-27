@@ -5,22 +5,47 @@
     .about_heading{
         font-size: 1.8rem;
         font-family: $highlight_font;
-        margin: 10px 10px;
     }
-    .card_content{
+    .about_content{
+        padding-top: 20px;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .card_img{
-            margin: 10px 10px;
-            width:20.5rem;
-            height:25.25rem;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        .about_img{
+            width:18rem;
+            height:23rem;
         }
-        .card_detail{
-            width: 20.5rem;
+        .about_detail{
+            padding-top: 20px;
+            width: 23rem;
             font-size: 1rem;
             font-family: $para_font;
-            margin: 10px 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about{
+        margin-top: 30px;
+        .about_heading{
+            font-size: 2rem;
+        }
+        .about_content{
+            padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .about_img{
+                width:19rem;
+                height:24rem;
+            }
+            .about_detail{
+                padding-top: 30px;
+            }
         }
     }
 }

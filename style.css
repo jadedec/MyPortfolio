@@ -1,23 +1,24 @@
 header {
   top: 0;
-  left: 20px;
   width: 100%;
   position: absolute;
 }
 header h1 {
+  display: inline-block;
   font-family: "Cormorant Upright", serif;
+  font-size: 2rem;
+  padding-left: 40px;
 }
 header h1 span {
   font-family: "Cormorant Upright", serif;
   color: #D9BEA5;
 }
 header .hamburger-lines {
-  display: block;
   height: 26px;
   width: 32px;
   position: absolute;
   top: 10px;
-  right: 40px;
+  right: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,27 +31,47 @@ header .hamburger-lines .line {
   background: white;
 }
 header nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-header nav li {
-  float: left;
-}
-header nav li a {
-  display: block;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-header nav li a :hover {
-  background-color: #ddd;
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header h1 {
+    font-size: 3rem;
+    display: inline-block;
+  }
+  header .hamburger-lines {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+  nav li {
+    float: right;
+  }
+  nav li a {
+    display: block;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  nav li a :hover {
+    background-color: #ddd;
+  }
+}
 .intro {
-  padding: 20px 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .intro .intro_heading {
   display: flex;
@@ -58,43 +79,112 @@ header nav li a :hover {
   justify-content: center;
   margin: 10px 10px;
   font-family: "Cormorant Upright", serif;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .intro .intro_detail {
+  width: 50vw;
   margin: 10px 10px;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+.contact {
+  margin: 0 auto;
+}
+.contact .contact_heading {
+  font-family: "Cormorant Upright", serif;
+  font-size: 3.5rem;
 }
 
 .touchButton {
-  padding: 20px 40px;
+  margin: 0 auto;
+}
+.touchButton .touchButton_button {
+  width: 10rem;
+  height: 3rem;
   border: 2px solid #D9BEA5;
   color: white;
   background-color: #3C3636;
-  text-align: center;
-  text-decoration: none;
 }
 
-.card {
-  margin-top: 20px;
+#titleLine {
+  display: block;
+  height: 6px;
+  width: 5.8rem;
+  border-radius: 10px;
+  background: #D9BEA5;
 }
-.card h2 {
+
+#subtitleLine {
+  display: block;
+  height: 2px;
+  width: 2.8rem;
+  border-radius: 10px;
+  background: #D9BEA5;
+}
+
+@media screen and (min-width: 768px) {
+  .intro .intro_heading {
+    font-size: 4.5rem;
+  }
+  .intro .intro_detail {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    margin: 0 auto;
+  }
+  .contact .contact_heading {
+    font-size: 4rem;
+  }
+
+  .touchButton {
+    margin: 0 auto;
+  }
+  .touchButton .touchButton_button {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  #titleLine {
+    width: 6rem;
+    border-radius: 10px;
+    background: #D9BEA5;
+  }
+
+  #subtitleLine {
+    width: 3rem;
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+h2 {
   font-family: "Cormorant Upright", serif;
   font-size: 2rem;
   margin: 10px 10px;
+  padding-top: 10px;
+}
+
+.card {
+  width: 300px;
+  margin-top: 20px;
+  align-items: center;
 }
 .card .card_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 5px;
 }
 .card .card_content .card_img {
-  margin: 10px 10px;
   width: 300px;
 }
 .card .card_content .card_heading {
   font-size: 1.8rem;
   font-family: "Cormorant Upright", serif;
-  margin: 10px 10px;
   display: inline-block;
 }
 .card .card_content .buttonGroup {
@@ -103,77 +193,166 @@ header nav li a :hover {
 .card .card_content .buttonGroup .buttonGroup_round {
   color: white;
   background-color: #3C3636;
-  padding: 10px 20px;
+  border: none;
   border-radius: 100%;
   font-size: 0.625rem;
-  width: 3rem;
-  height: 3rem;
-}
-.card .card_content .buttonTeam {
-  padding-top: 20px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .card .card_content .buttonTeam .buttonTeam_rec {
+  border: none;
   color: white;
   background-color: #3C3636;
-  padding: 10px 20px;
-  border-radius: 100%;
   font-size: 0.625rem;
   width: 4.1rem;
-  height: 1.3rem;
+  height: 1.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 10px 10px;
+  }
+
+  .card {
+    width: 350px;
+    margin-top: 30px;
+  }
+  .card .card_content {
+    padding-top: 8px;
+  }
+  .card .card_content .card_img {
+    width: 350px;
+  }
+  .card .card_content .card_heading {
+    font-size: 2rem;
+  }
+  .card .card_content .buttonGroup .buttonGroup_round {
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .card .card_content .buttonTeam .buttonTeam_rec {
+    font-size: 1rem;
+    width: 4.5rem;
+    height: 2rem;
+  }
+}
 .about {
   margin-top: 20px;
 }
 .about .about_heading {
   font-size: 1.8rem;
   font-family: "Cormorant Upright", serif;
-  margin: 10px 10px;
 }
-.about .card_content {
+.about .about_content {
+  padding-top: 20px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
-.about .card_content .card_img {
-  margin: 10px 10px;
-  width: 20.5rem;
-  height: 25.25rem;
+.about .about_content .about_img {
+  width: 18rem;
+  height: 23rem;
 }
-.about .card_content .card_detail {
-  width: 20.5rem;
+.about .about_content .about_detail {
+  padding-top: 20px;
+  width: 23rem;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
-  margin: 10px 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    margin-top: 30px;
+  }
+  .about .about_heading {
+    font-size: 2rem;
+  }
+  .about .about_content {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about .about_content .about_img {
+    width: 19rem;
+    height: 24rem;
+  }
+  .about .about_content .about_detail {
+    padding-top: 30px;
+  }
+}
 .more {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .list {
   padding: 20px 20px;
   width: 20.5rem;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 .list .list_heading {
+  padding-top: 20px;
   font-size: 1.5rem;
   font-family: "Cormorant Upright", serif;
-  margin: 10px 10px;
 }
-.list .list_item {
+.list .list_content {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: 3fr;
+  gap: 10px;
+  justify-content: space-between;
+  justify-items: stretch;
+}
+.list .list_content .list_item {
+  display: inline-block;
   margin-bottom: 5px;
 }
-.list .list_item:hover {
+.list .list_content .list_item:hover {
   background-color: #ddd;
 }
 
+@media screen and (min-width: 768px) {
+  .more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .list {
+    padding: 25px 25px;
+  }
+  .list .list_heading {
+    padding-top: 20px;
+    font-size: 1.7rem;
+  }
+  .list .list_content {
+    padding-top: 12px;
+    gap: 20px;
+  }
+  .list .list_content .list_item {
+    display: inline-block;
+  }
+}
 footer {
   left: 0;
   bottom: 0;
@@ -191,6 +370,7 @@ footer .footerButton {
 footer .footerButton .footerButton_icon {
   padding: 10px 10px;
   background-color: #3C3636;
+  border: none;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -202,6 +382,19 @@ footer .footerButton .footerButton_icon img {
   background-color: #3C3636;
 }
 
+@media screen and (min-width: 768px) {
+  footer .footerButton {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  footer .footerButton .footerButton_icon {
+    padding: 20px 20px;
+  }
+  footer .footerButton .footerButton_icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -212,14 +405,11 @@ footer .footerButton .footerButton_icon img {
 body {
   color: white;
   font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 body main {
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
-  margin: 20px 20px;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */

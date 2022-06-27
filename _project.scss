@@ -1,24 +1,32 @@
 @use "./variable" as *;
 
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+h2{
+    font-family: $highlight_font;
+    font-size: 2rem;
+    margin: 10px 10px;
+    padding-top: 10px;
+}
+
 .card{
+    width: 300px;
     margin-top: 20px;
-    h2{
-        font-family: $highlight_font;
-        font-size: 2rem;
-        margin: 10px 10px;
-    }
+    align-items: center;
     .card_content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding-top: 5px;
         .card_img{
-            margin: 10px 10px;
             width:300px;
         }
         .card_heading{
             font-size: 1.8rem;
             font-family: $highlight_font;
-            margin: 10px 10px;
             display: inline-block;
         }
         .buttonGroup{
@@ -26,23 +34,63 @@
             .buttonGroup_round{
             color: $text_color;
             background-color: $button_color;
-            padding: 10px 20px;
+            border: none;
             border-radius: 100%;
             font-size: 0.625rem;
-            width: 3rem;
-            height: 3rem;
+            width: 2.5rem;
+            height: 2.5rem;
             }  
         }  
         .buttonTeam{
-            padding-top: 20px;
             .buttonTeam_rec{
+                border: none;
                 color: $text_color;
                 background-color: $button_color;
-                padding: 10px 20px;
-                border-radius: 100%;
                 font-size: 0.625rem;
                 width: 4.1rem;
-                height: 1.3rem;
+                height: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content:space-around;
+        flex-wrap: wrap;
+    }
+    h2{
+        font-size: 3rem;
+        margin: 10px 10px;
+    }
+    
+    .card{
+        width: 350px;
+        margin-top: 30px;
+        .card_content{
+            padding-top: 8px;
+            .card_img{
+                width:350px;
+            }
+            .card_heading{
+                font-size: 2rem;
+            }
+            .buttonGroup{
+                .buttonGroup_round{
+                font-size: 1rem;
+                width: 3rem;
+                height: 3rem;
+                }  
+            }  
+            .buttonTeam{
+                .buttonTeam_rec{
+                    font-size: 1rem;
+                    width: 4.5rem;
+                    height: 2rem;
+                }
             }
         }
     }
