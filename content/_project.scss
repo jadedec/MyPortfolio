@@ -2,11 +2,15 @@
 
 .card{
     margin-top: 20px;
-        h2{
-            font-family: $highlight_font;
-            font-size: 2rem;
-            margin: 10px 10px;
-        }
+    h2{
+        font-family: $highlight_font;
+        font-size: 2rem;
+        margin: 10px 10px;
+    }
+    .card_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .card_img{
             margin: 10px 10px;
             width:300px;
@@ -15,27 +19,31 @@
             font-size: 1.8rem;
             font-family: $highlight_font;
             margin: 10px 10px;
-        }
-        .card_detail{
-            margin: 10px 10px;
-            font-family: $para_font;
+            display: inline-block;
         }
         .buttonGroup{
-            .buttonGroup_button{
+            display: inline-block;
+            .buttonGroup_round{
             color: $text_color;
             background-color: $button_color;
-            border: none;
-            // margin: 10px 10px;
             padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            border-radius: 100%;
             font-size: 0.625rem;
-                &--box{
-                    padding: 10px 10px;
-                    border-radius: 100%;
-                }
-                
+            width: 3rem;
+            height: 3rem;
+            }  
+        }  
+        .buttonTeam{
+            padding-top: 20px;
+            .buttonTeam_rec{
+                color: $text_color;
+                background-color: $button_color;
+                padding: 10px 20px;
+                border-radius: 100%;
+                font-size: 0.625rem;
+                width: 4.1rem;
+                height: 1.3rem;
             }
         }
     }
+}
