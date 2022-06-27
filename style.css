@@ -1,40 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(19, 19, 19, 0.913);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  color: white;
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-main {
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 20px 20px;
-  align-items: center;
-}
-
 header {
   top: 0;
   left: 20px;
   width: 100%;
   position: absolute;
 }
-header .container h1 {
+header h1 {
   font-family: "Cormorant Upright", serif;
 }
-header .container h1 span {
+header h1 span {
   font-family: "Cormorant Upright", serif;
   color: #D9BEA5;
 }
-header .container .hamburger-lines {
+header .hamburger-lines {
   display: block;
   height: 26px;
   width: 32px;
@@ -45,30 +22,30 @@ header .container .hamburger-lines {
   flex-direction: column;
   justify-content: space-between;
 }
-header .container .hamburger-lines .line {
+header .hamburger-lines .line {
   display: block;
   height: 4px;
   width: 100%;
   border-radius: 10px;
   background: white;
 }
-header .container nav {
+header nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-header .container nav li {
+header nav li {
   float: left;
 }
-header .container nav li a {
+header nav li a {
   display: block;
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   color: white;
 }
-header .container nav li a :hover {
+header nav li a :hover {
   background-color: #ddd;
 }
 
@@ -76,7 +53,9 @@ header .container nav li a :hover {
   padding: 20px 20px;
 }
 .intro .intro_heading {
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px 10px;
   font-family: "Cormorant Upright", serif;
   font-size: 5rem;
@@ -103,40 +82,85 @@ header .container nav li a :hover {
   font-size: 2rem;
   margin: 10px 10px;
 }
-.card .card_img {
+.card .card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .card_content .card_img {
   margin: 10px 10px;
   width: 300px;
 }
-.card .card_heading {
+.card .card_content .card_heading {
+  font-size: 1.8rem;
+  font-family: "Cormorant Upright", serif;
+  margin: 10px 10px;
+  display: inline-block;
+}
+.card .card_content .buttonGroup {
+  display: inline-block;
+}
+.card .card_content .buttonGroup .buttonGroup_round {
+  color: white;
+  background-color: #3C3636;
+  padding: 10px 20px;
+  border-radius: 100%;
+  font-size: 0.625rem;
+  width: 3rem;
+  height: 3rem;
+}
+.card .card_content .buttonTeam {
+  padding-top: 20px;
+}
+.card .card_content .buttonTeam .buttonTeam_rec {
+  color: white;
+  background-color: #3C3636;
+  padding: 10px 20px;
+  border-radius: 100%;
+  font-size: 0.625rem;
+  width: 4.1rem;
+  height: 1.3rem;
+}
+
+.about {
+  margin-top: 20px;
+}
+.about .about_heading {
   font-size: 1.8rem;
   font-family: "Cormorant Upright", serif;
   margin: 10px 10px;
 }
-.card .card_detail {
+.about .card_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .card_content .card_img {
   margin: 10px 10px;
+  width: 20.5rem;
+  height: 25.25rem;
+}
+.about .card_content .card_detail {
+  width: 20.5rem;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
+  margin: 10px 10px;
 }
-.card .buttonGroup .buttonGroup_button {
-  color: white;
-  background-color: #3C3636;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.625rem;
-}
-.card .buttonGroup .buttonGroup_button--box {
-  padding: 10px 10px;
-  border-radius: 100%;
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .list {
+  padding: 20px 20px;
+  width: 20.5rem;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  float: left;
 }
 .list .list_heading {
   font-size: 1.5rem;
@@ -176,4 +200,26 @@ footer .footerButton .footerButton_icon img {
   -o-object-fit: contain;
      object-fit: contain;
   background-color: #3C3636;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(19, 19, 19, 0.913);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body main {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
