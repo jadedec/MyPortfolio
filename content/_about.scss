@@ -1,0 +1,26 @@
+@use "./variable" as *;
+
+.about{
+    margin-top: 20px;
+    .about_heading{
+        font-size: 1.8rem;
+        font-family: $highlight_font;
+        margin: 10px 10px;
+    }
+    .card_content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card_img{
+            margin: 10px 10px;
+            width:20.5rem;
+            height:25.25rem;
+        }
+        .card_detail{
+            width: 20.5rem;
+            font-size: 1rem;
+            font-family: $para_font;
+            margin: 10px 10px;
+        }
+    }
+}
