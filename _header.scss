@@ -31,17 +31,19 @@ header{
             background: white;
         }
     }
-    nav{
+    .navbar{
         display: none;
     }
+
 }
+
 
 @media screen and (min-width: 768px) {
     header{
         height:80px;
         h1{
             font-size: 3rem;
-            display: inline-block;
+            display: inline;
         }
         .hamburger-lines {
             // visibility:hidden;
@@ -49,21 +51,32 @@ header{
         }
     }
 
-    nav{
-        display: inline-block;
+    .navbar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right:60px;
         font-size: 2.5rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
         li{
+            display: inline;
             float:right;
             a{
                 display: block;
-                padding: 0.5rem;
+                padding: 14px 16px;
                 font-family: $para_font;
                 font-size: 1.25rem;
                 text-align: center;
                 text-decoration: none;
                 color: $text_color;
-                :hover{
+                &:hover{
                     background-color: $hover_color;
+                }
+                .active{
+                    background-color: #04AA6D;
                 }
             }
         }

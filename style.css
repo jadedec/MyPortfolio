@@ -30,7 +30,7 @@ header .hamburger-lines .line {
   border-radius: 10px;
   background: white;
 }
-header nav {
+header .navbar {
   display: none;
 }
 
@@ -40,30 +40,41 @@ header nav {
   }
   header h1 {
     font-size: 3rem;
-    display: inline-block;
+    display: inline;
   }
   header .hamburger-lines {
     display: none;
   }
 
-  nav {
-    display: inline-block;
+  .navbar {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 60px;
     font-size: 2.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
-  nav li {
+  .navbar li {
+    display: inline;
     float: right;
   }
-  nav li a {
+  .navbar li a {
     display: block;
-    padding: 0.5rem;
+    padding: 14px 16px;
     font-family: "Inter", sans-serif;
     font-size: 1.25rem;
     text-align: center;
     text-decoration: none;
     color: white;
   }
-  nav li a :hover {
+  .navbar li a:hover {
     background-color: #ddd;
+  }
+  .navbar li a .active {
+    background-color: #04AA6D;
   }
 }
 .intro {
@@ -189,6 +200,7 @@ h2 {
 }
 .card .card_content .buttonGroup {
   display: inline-block;
+  margin-left: 40px;
 }
 .card .card_content .buttonGroup .buttonGroup_round {
   color: white;
@@ -213,7 +225,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
   }
 
@@ -293,19 +305,19 @@ h2 {
   }
   .about .about_content .about_detail {
     padding-top: 30px;
+    width: 45vw;
   }
 }
 .more {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: nowrap;
 }
 
 .list {
   padding: 20px 20px;
-  width: 20.5rem;
 }
 .list .list_heading {
   padding-top: 20px;
@@ -315,7 +327,7 @@ h2 {
 .list .list_content {
   padding-top: 10px;
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 15fr 1fr;
   grid-template-rows: 3fr;
   gap: 10px;
   justify-content: space-between;
@@ -333,8 +345,7 @@ h2 {
   .more {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
@@ -411,5 +422,4 @@ body main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
