@@ -1,68 +1,51 @@
-header {
-  top: 0;
-  width: 100%;
-  position: absolute;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.header {
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 5.5rem;
 }
-header h1 {
-  display: inline-block;
+.header__title {
   font-family: "Cormorant Upright", serif;
-  font-size: 2rem;
-  padding-left: 40px;
+  font-size: 1.5rem;
+  padding: 14px 16px;
 }
-header h1 span {
+.header__title--first {
   font-family: "Cormorant Upright", serif;
   color: #D9BEA5;
 }
-header .hamburger-lines {
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 10px;
-  right: 60px;
+.header__menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-header .hamburger-lines .line {
+.header__menu--line {
   display: block;
-  height: 4px;
-  width: 100%;
+  margin: 5px;
+  height: 2px;
+  width: 30px;
   border-radius: 10px;
   background: white;
 }
-header .navbar {
+.header__navbar {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header {
     height: 80px;
   }
-  header h1 {
-    font-size: 3rem;
-    display: inline;
-  }
-  header .hamburger-lines {
+  .header__menu {
     display: none;
   }
-
-  .navbar {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 60px;
+  .header__navbar {
+    display: flex;
+    justify-content: space-around;
     font-size: 2.5rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
   }
-  .navbar li {
-    display: inline;
-    float: right;
-  }
-  .navbar li a {
-    display: block;
+  .header__navbar--text {
+    text-decoration: none;
     padding: 14px 16px;
     font-family: "Inter", sans-serif;
     font-size: 1.25rem;
@@ -70,21 +53,17 @@ header .navbar {
     text-decoration: none;
     color: white;
   }
-  .navbar li a:hover {
+  .header__navbar--text:hover {
     background-color: #ddd;
-  }
-  .navbar li a .active {
-    background-color: #04AA6D;
   }
 }
 .intro {
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
-.intro .intro_heading {
+.intro__heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,8 +71,8 @@ header .navbar {
   font-family: "Cormorant Upright", serif;
   font-size: 4rem;
 }
-.intro .intro_detail {
-  width: 50vw;
+.intro__detail {
+  width: 60vw;
   margin: 10px 10px;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -135,20 +114,18 @@ header .navbar {
 }
 
 @media screen and (min-width: 768px) {
-  .intro .intro_heading {
+  .intro__heading {
     font-size: 4.5rem;
   }
-  .intro .intro_detail {
+  .intro__detail {
     font-size: 1.25rem;
   }
-
   .contact {
     margin: 0 auto;
   }
   .contact .contact_heading {
     font-size: 4rem;
   }
-
   .touchButton {
     margin: 0 auto;
   }
@@ -156,62 +133,62 @@ header .navbar {
     width: 15rem;
     height: 5rem;
   }
-
   #titleLine {
     width: 6rem;
     border-radius: 10px;
     background: #D9BEA5;
   }
-
   #subtitleLine {
     width: 3rem;
   }
 }
 .project {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: nowrap;
+  gap: 100px;
+  flex-wrap: wrap;
 }
-
-h2 {
+.project__heading {
   font-family: "Cormorant Upright", serif;
   font-size: 2rem;
   margin: 10px 10px;
   padding-top: 10px;
 }
-
-.card {
+.project__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   width: 300px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.project__card--img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.project__card--heading {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.card .card_content {
-  padding-top: 5px;
-}
-.card .card_content .card_img {
-  width: 300px;
-}
-.card .card_content .card_heading {
+.project__card--heading--text {
   font-size: 1.8rem;
   font-family: "Cormorant Upright", serif;
-  display: inline-block;
 }
-.card .card_content .buttonGroup {
-  display: inline-block;
-  margin-left: 40px;
+.project__card--heading--buttons {
+  display: flex;
+  gap: 10px;
 }
-.card .card_content .buttonGroup .buttonGroup_round {
+.project__card--heading--button {
   color: white;
-  background-color: #3C3636;
-  border: none;
-  border-radius: 100%;
   font-size: 0.625rem;
-  width: 2.5rem;
-  height: 2.5rem;
 }
-.card .card_content .buttonTeam .buttonTeam_rec {
+.project__card--tipButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.project__card--tipButton {
   border: none;
   color: white;
   background-color: #3C3636;
@@ -220,44 +197,6 @@ h2 {
   height: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .project {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-
-  h2 {
-    font-size: 3rem;
-    margin: 10px 10px;
-  }
-
-  .card {
-    width: 350px;
-    margin-top: 30px;
-  }
-  .card .card_content {
-    padding-top: 8px;
-  }
-  .card .card_content .card_img {
-    width: 350px;
-  }
-  .card .card_content .card_heading {
-    font-size: 2rem;
-  }
-  .card .card_content .buttonGroup .buttonGroup_round {
-    font-size: 1rem;
-    width: 3rem;
-    height: 3rem;
-  }
-  .card .card_content .buttonTeam .buttonTeam_rec {
-    font-size: 1rem;
-    width: 4.5rem;
-    height: 2rem;
-  }
-}
 .about {
   margin-top: 20px;
 }
@@ -282,6 +221,7 @@ h2 {
   width: 23rem;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
+  line-height: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,7 +234,7 @@ h2 {
   .about .about_content {
     padding-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -348,7 +288,6 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-
   .list {
     padding: 25px 25px;
   }
@@ -409,13 +348,16 @@ footer .footerButton .footerButton_icon img {
 * {
   margin: 0;
   padding: 0;
-  background-color: rgba(19, 19, 19, 0.913);
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #2c2a2a;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
 }
 
 body {
   color: white;
   font-family: "Inter", sans-serif;
+  background-color: #2c2a2a;
 }
 body main {
   padding: 20px 20px;

@@ -8,111 +8,104 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <title>Portfolio of Jade</title>
+    <title>Jade - Junior Software Developer</title>
 </head>
 
 <body>
-    <header>
-        <h1>SHIQI<span>WANG</span></h1>
-        <div class="hamburger-lines">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-        <ul class="navbar">
-            <li><a href="#About">About</a></li>
-            <li><a href="#Project">Project</a></li>
-            <li><a href="#Contact">Contact</a></li>
+    <section class="header">
+        <h1 class="header__title">SHIQI<span class="header__title header__title--first"> WANG</span></h1>
+
+        <ul class="header__navbar">
+            <a class="header__navbar--text" href="#About">About</a>
+            <a class="header__navbar--text" href="#Project">Project</a>
+            <a class="header__navbar--text" href="#Contact">Contact</a>
         </ul>
-    </header>
+
+        <div class="header__menu">
+            <span class="header__menu--line"></span>
+            <span class="header__menu--line"></span>
+            <span class="header__menu--line"></span>
+        </div>
+    </section>
+
     <main>
         <section class="intro">
-            <h2 class="intro_heading">
+            <h2 class="intro__heading">
                 Junior Software Developer.<span id="titleLine"></span>
             </h2>
 
-            <p class="intro_detail">
-                Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis.
-                Diam,
-                elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis
-                tempor.
+            <p class="intro__detail">
+                Hello, you can call me jade. :) <br>
+                My Chinese name is Shiqi Wang and I'm from China.I'm a recent graduate from Durham University with an
+                Msc in Electrical and Electronic Engineering.Currently I'm training to be a software engineer at
+                _Nology.
             </p>
         </section>
 
-        <h2 id="Project">PORTFOLIO ↯</h2>
+
+        <h2 class="project__heading">PROJECT ↯<span id="subtitleLine"></span></h2>
         <div class="project">
-            <section class="card">
-                <div class="card_content">
-                    <img class="card_img" src="./project/project.png" alt="project1_img">
-                    <h3 class="card_heading">PROJECT 1<span id="subtitleLine"></span></h3>
+            <section class="project__card">
+                <img class="project__card--img" src="./project/game.png" alt="project1 img">
 
-                    <div class="buttonGroup">
-                        <button class="buttonGroup_round ">&#128065</button>
-                        <button class="buttonGroup_round ">&lt/&gt</button>
+                <div class="project__card--heading">
+                    <h3 class="project__card--heading--text">Javascript Game</h3>
+
+                    <div class="project__card--heading--buttons">
+                        <a class="project__card--heading--button" href="https://github.com/jadedec/FirstGame">
+                            <img src="./icon/code.svg" alt="code">
+                        </a>
+                        <a class="project__card--heading--button" href="https://jadedec.github.io/FirstGame/">
+                            <img src="./icon/eye.svg" alt="code">
+                        </a>
                     </div>
-                    <div class="buttonTeam">
-                        <button class="buttonTeam_rec">REACT</button>
-                        <button class="buttonTeam_rec">SCSS</button>
-                    </div>
+                </div>
+                <div class="project__card--tipButtons">
+                    <button class="project__card--tipButton">HTML</button>
+                    <button class="project__card--tipButton">SCSS</button>
+                    <button class="project__card--tipButton">Javascript</button>
                 </div>
             </section>
 
-            <section class="card">
-                <div class="card_content">
-                    <img class="card_img" src="./project/project.png" alt="project2_img">
-                    <div class="card_info">
-                        <h3 class="card_heading">PROJECT 2<span id="subtitleLine"></span></h3>
+            <section class="project__card">
+                <img class="project__card--img" src="./project/punk.png" alt="project1 img">
+
+                <div class="project__card--heading">
+                    <h3 class="project__card--heading--text">Punk Beer</h3>
+
+                    <div class="project__card--heading--buttons">
+                        <a class="project__card--heading--button" href="https://github.com/jadedec/punk-api">
+                            <img src="./icon/code.svg" alt="code">
+                        </a>
+                        <a class="project__card--heading--button" href="https://jadedec.github.io/punk-api/">
+                            <img src="./icon/eye.svg" alt="code">
+                        </a>
                     </div>
-                    <div class="buttonGroup">
-                        <button class="buttonGroup_round ">&#128065</button>
-                        <button class="buttonGroup_round ">&lt/&gt</button>
-                    </div>
-                    <div class="buttonTeam">
-                        <button class="buttonTeam_rec">REACT</button>
-                        <button class="buttonTeam_rec">SCSS</button>
-                    </div>
+                </div>
+                <div class="project__card--tipButtons">
+                    <button class="project__card--tipButton">React</button>
+                    <button class="project__card--tipButton">API</button>
+                    <button class="project__card--tipButton">SCSS</button>
                 </div>
             </section>
 
-            <section class="card">
-                <div class="card_content">
-                    <img class="card_img" src="./project/project.png" alt="project1_img">
-                    <h3 class="card_heading">PROJECT 3<span id="subtitleLine"></span></h3>
 
-                    <div class="buttonGroup">
-                        <button class="buttonGroup_round ">&#128065</button>
-                        <button class="buttonGroup_round ">&lt/&gt</button>
-                    </div>
-                    <div class="buttonTeam">
-                        <button class="buttonTeam_rec">REACT</button>
-                        <button class="buttonTeam_rec">SCSS</button>
-                    </div>
-                </div>
-            </section>
         </div>
 
         <section class="about" id="About">
             <h3 class="about_heading">ABOUT.<span id="subtitleLine"></span></h3>
 
             <div class="about_content">
-                <img class="about_img" src="./project/project.png" alt="about">
+                <img class="about_img" src="./project/me.JPG" alt="about">
                 <p class="about_detail">
-                    Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices
-                    aliquet.
-                    Velit, tincidunt sed
-                    sed proin pellentesque dictum pulvinar. Arcu diam massa elementum tempor lectus. Aliquam lacus lacus
-                    diam
-                    eget quisque purus etiam mi, curabitur. Imperdiet sed felis ipsum, porttitor ipsum faucibus neque
-                    cursus.
-                    Quis blandit quisque sed diam at tellus sagittis.
+                    If I could sum myself up in three words, it would be driven, adventurous and adaptable. <br>
+                    I have
+                    studied technology-related majors and have always wanted to join the tech industry as it is
+                    constantly moving forward and evolving. I previously worked as a digital media art tutor, focusing
+                    on adobe software, which shaped me into a creative problem solver. At _nology, I have learned
+                    programming using practical and industry-led methods. I am excited to use the skills I have learned
+                    at _nology in my future role as a developer. ​
 
-                    Urna, vel nibh lectus condimentum. Purus pellentesque scelerisque tristique in vestibulum augue
-                    accumsan. Eu
-                    morbi porttitor dolor ipsum dui ultrices viverra nisi, leo. Erat porta risus, id enim adipiscing sit
-                    amet
-                    at. Tortor, posuere pulvinar volutpat magnis felis suspendisse ut. Tincidunt in pulvinar suspendisse
-                    lectus
-                    enim, tortor mattis ut. Integer auctor aliquet tincidunt rhoncus at.
                 </p>
             </div>
         </section>
@@ -124,9 +117,9 @@
                 <div class="list_content">
                     <p class="list_item">Trainee Software Developer @ Nology</p>
                     <p>+</p>
-                    <p class="list_item">Senior Branding Manager @ Asos</p>
+                    <p class="list_item">Academic Advisor @ CUC</p>
                     <p>+</p>
-                    <p class="list_item">Marketing Manager @ John Lewis</p>
+                    <p class="list_item">Freelance Mandarin Interpreter @ PLS</p>
                     <p>+</p>
                 </div>
             </div>

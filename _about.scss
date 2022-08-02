@@ -22,6 +22,7 @@
             width: 23rem;
             font-size: 1rem;
             font-family: $para_font;
+            line-height: 1.5rem;
         }
     }
 }
@@ -35,7 +36,7 @@
         .about_content{
             padding-top: 30px;
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             gap: 20px;
             justify-content: space-around;
             flex-wrap: wrap;

@@ -1,12 +1,11 @@
 @use "./variable" as *;
 
 .intro{
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    .intro_heading{
+    &__heading{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,8 +13,8 @@
         font-family: $highlight_font;
         font-size: 4rem;
     }
-    .intro_detail{
-        width: 50vw;
+    &__detail{
+        width: 60vw;
         margin: 10px 10px;
         font-family: $para_font;
         font-size: 1rem;
@@ -57,10 +56,10 @@
 }
 @media screen and (min-width: 768px) {
     .intro{
-        .intro_heading{
+        &__heading{
             font-size: 4.5rem;
         }
-        .intro_detail{
+        &__detail{
             font-size: 1.25rem;
         }
     }

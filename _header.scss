@@ -1,37 +1,34 @@
 @use "./variable" as *;
 
-header{
-    top:0;
-    width: 100%;
-    position: absolute;
-    h1{
-        display: inline-block;
+.header{
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    height:5.5rem;
+
+    &__title{
         font-family: $highlight_font;
-        font-size: 2rem;
-        padding-left: 40px;
-        span{
+        font-size: 1.5rem;
+        padding: 14px 16px;
+        &--first{
             font-family: $highlight_font;
             color:$line_color;
         }
     }
-    .hamburger-lines {
-        height: 26px;
-        width: 32px;
-        position: absolute;
-        top: 10px;
-        right:60px;
+    &__menu {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        .line{
+        justify-content: flex-start;
+        &--line{
             display: block;
-            height: 4px;
-            width: 100%;
+            margin: 5px;
+            height: 2px;
+            width: 30px;
             border-radius: 10px;
             background: white;
         }
     }
-    .navbar{
+    &__navbar{
         display: none;
     }
 
@@ -39,33 +36,20 @@ header{
 
 
 @media screen and (min-width: 768px) {
-    header{
+    .header{
         height:80px;
-        h1{
-            font-size: 3rem;
-            display: inline;
-        }
-        .hamburger-lines {
-            // visibility:hidden;
+        
+        &__menu {
             display: none;
         }
-    }
-
-    .navbar{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right:60px;
-        font-size: 2.5rem;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        li{
-            display: inline;
-            float:right;
-            a{
-                display: block;
+    
+        &__navbar{
+            display: flex;
+            justify-content: space-around;
+            font-size: 2.5rem;
+            overflow: hidden;
+            &--text{
+                text-decoration: none;
                 padding: 14px 16px;
                 font-family: $para_font;
                 font-size: 1.25rem;
@@ -75,11 +59,7 @@ header{
                 &:hover{
                     background-color: $hover_color;
                 }
-                .active{
-                    background-color: #04AA6D;
-                }
             }
         }
     }
-
 }
